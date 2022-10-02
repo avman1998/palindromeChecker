@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome Checker Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              bgColor: "#B1F4DB ",
+              textColor: "#5E927E ",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    style="font-family: 'Montserrat', sans-serif"
+    class="flex flex-col items-center justify-center min-h-[100vh] bg-bgColor"
+  >
+    <div
+      class="main-container text-center flex flex-col gap-[30px] max-w-[100%] px-[30px]"
+    >
+      <h1 class="text-[200%] text-textColor">Palindrome Checker Game</h1>
+      <div class="flex items-center justify-center">
+        <p class="text-center w-[70%] text-[110%]">
+          Plaindrome is a word, phrase, or sequence that reads the same
+          backwards as forwards, e.g. madam or nurses run.
+        </p>
+      </div>
+      <textarea
+        id="myText"
+        cols="50"
+        rows="10"
+        class="border-2 border-black rounded-lg text-[120%] font-semibold p-[5px]"
+      ></textarea>
+      <div>
+        <p id="result" class="text-[120%] font-semibold"></p>
+        <button
+          id="btn-check"
+          class="text-[180%] bg-textColor text-bgColor rounded-lg px-[20px] py-[5px] m-[10px]"
+        >
+          Check
+        </button>
+      </div>
+      <div class="flex items-center justify-center">
+        <h1
+          class="text-[160%] bg-textColor text-bgColor mt-[40px] w-[50%] rounded px-[10px]"
+        >
+          😎 Developed By Aman Verma 😎
+        </h1>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
